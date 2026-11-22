@@ -14,6 +14,7 @@ const recovery = {
     { label: 'Platform capability gap', route: 'Bring evidence and business value to Product and Engineering.' },
   ],
   callout: 'Changing a product definition is not the same as correcting every customer account assigned to it.',
+  /*
   speakerNotes: [
     'Once we understand the root cause, I would agree the appropriate solution with the accountable business and technical owners.',
     'My starting point would always be to use existing Kraken functionality wherever possible.',
@@ -23,6 +24,7 @@ const recovery = {
     'We also need to assess the billing impact. Where incorrect products have already affected billed periods, charges must be reversed and bills reissued.',
     'Kraken’s bulk correction and workflow reprocessing capabilities can support this process.',
     'I would not consider the incident resolved just because the correction job completed. We need evidence that customer accounts and commercial outcomes are correct.'
-  ]
+  ],
+  */
 };
 export default recovery;

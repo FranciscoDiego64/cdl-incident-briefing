@@ -19,8 +19,9 @@ const nav: { id: SectionId; number: string; label: string }[] = [
   { id: 'close', number: '06', label: 'Outcomes & prevention' },
 ];
 
-function SpeakerNotes({ notes }: { notes: string[] }) {
+function SpeakerNotes({ notes = [] }: { notes?: string[] }) {
   const [open, setOpen] = useState(false);
+  if (notes.length === 0) return null;
   return <div className="notes-wrap"><button className="notes-toggle" onClick={() => setOpen(!open)} aria-expanded={open}>{open ? 'Hide' : 'Show'} speaker notes <span>{open ? '−' : '+'}</span></button>{open && <div className="notes-panel">{notes.map((note, i) => <p key={i}>{note}</p>)}</div>}</div>;
 }
 
@@ -38,7 +39,7 @@ function Overview() {
     <div className="section-heading compact"><div className="eyebrow">IMMEDIATE RESPONSE</div><h2>Three priorities. One coordinated response.</h2></div>
     <div className="priority-grid">{overview.priorities.map((item) => <article className="priority-card" key={item.number}><span className="card-number">{item.number}</span><h3>{item.title}</h3><p>{item.description}</p></article>)}</div>
     <div className="principle"><span className="principle-label">LEADERSHIP PRINCIPLE</span><p>{overview.leadership}</p></div>
-    <SpeakerNotes notes={overview.speakerNotes}/>
+    {/* <SpeakerNotes notes={overview.speakerNotes}/> */}
   </>;
 }
 
@@ -46,7 +47,7 @@ function Investigation() {
   return <><SectionHeading eyebrow={investigation.eyebrow} title={investigation.title} lead={investigation.lead}/>
     <div className="flow-list">{investigation.stages.map((stage, i) => <article className="flow-card" key={stage.name}><div className="flow-index">0{i + 1}</div><div className="flow-content"><h3>{stage.name}</h3><strong>{stage.question}</strong><p>{stage.detail}</p></div><div className="flow-arrow">↘</div></article>)}</div>
     <div className="output-panel"><div className="eyebrow">INVESTIGATION OUTPUTS</div><div className="chip-list">{investigation.outputs.map((item) => <span className="chip" key={item}>{item}</span>)}</div></div>
-    <SpeakerNotes notes={investigation.speakerNotes}/>
+    {/* <SpeakerNotes notes={overview.speakerNotes}/> */}
   </>;
 }
 
@@ -55,7 +56,7 @@ function Recovery() {
     <div className="gate-grid">{recovery.gates.map((gate) => <article className="gate-card" key={gate.number}><div className="gate-top"><span>{gate.number}</span><span className="gate-check">○</span></div><h3>{gate.name}</h3><p>{gate.description}</p><div className="evidence"><small>EXIT EVIDENCE</small><strong>{gate.evidence}</strong></div></article>)}</div>
     <div className="solution-panel"><div className="eyebrow">SOLUTION ROUTING</div>{recovery.routes.map((route) => <div className="route-row" key={route.label}><strong>{route.label}</strong><span>{route.route}</span></div>)}</div>
     <div className="warning-note"><span>IMPORTANT DISTINCTION</span><p>{recovery.callout}</p></div>
-    <SpeakerNotes notes={recovery.speakerNotes}/>
+    {/* <SpeakerNotes notes={overview.speakerNotes}/> */}
   </>;
 }
 
@@ -64,7 +65,7 @@ function Stakeholders() {
     <div className="workstream-list">{stakeholders.workstreams.map((item, i) => <article className="workstream" key={item.name}><div className="workstream-number">0{i + 1}</div><div className="workstream-main"><h3>{item.name}</h3><div className="owner-line"><small>CLIENT BUSINESS OWNER</small><strong>{item.owner}</strong></div><div className="owner-line"><small>DELIVERY COLLABORATION</small><strong>{item.partners}</strong></div><p className="outcome-line">{item.outcome}</p></div></article>)}</div>
     <div className="oversight-grid"><div><small>PROGRAMME OVERSIGHT</small><p>{stakeholders.oversight}</p></div><div><small>MY ROLE AS COMMERCIALS CDL</small><p>{stakeholders.role}</p></div></div>
     <div className="impact-panel"><div className="eyebrow">WIDER IMPACT TO ASSESS — NOT ASSUMED</div><div className="impact-grid">{stakeholders.impacts.map((impact) => <div className="impact-item" key={impact.name}><strong>{impact.name}</strong><p>{impact.detail}</p></div>)}</div></div>
-    <SpeakerNotes notes={stakeholders.speakerNotes}/>
+    {/* <SpeakerNotes notes={overview.speakerNotes}/> */}
   </>;
 }
 
@@ -86,7 +87,7 @@ function AIDemo() {
     </div>
     <div className="ai-prompt"><div><div className="eyebrow">AI ASSISTED NEXT STEP</div><p>Pass the aggregated findings to an approved AI tool to cluster patterns, propose investigation paths and draft a prioritised checklist. The prototype does not call an external LLM.</p></div><button className="secondary-button" onClick={copyPrompt}>{copied ? 'Copied' : 'Copy AI prompt'} ↗</button></div>
     <div className="guardrail"><span>HUMAN ACCOUNTABILITY</span><p>{aiDemo.guardrail}</p></div>
-    <SpeakerNotes notes={aiDemo.speakerNotes}/>
+    {/* <SpeakerNotes notes={overview.speakerNotes}/> */}
   </>;
 }
 
@@ -95,7 +96,7 @@ function Close() {
     <div className="outcome-grid">{close.outcomes.map((outcome, i) => <article className="outcome-card" key={outcome.title}><span className="outcome-index">0{i + 1}</span><h3>{outcome.title}</h3><ul>{outcome.items.map((item) => <li key={item}>{item}</li>)}</ul></article>)}</div>
     <div className="communication-panel"><div className="eyebrow">COMMUNICATION BY AUDIENCE</div>{close.communications.map((item) => <div className="communication-row" key={item.audience}><strong>{item.audience}</strong><p>{item.method}</p></div>)}</div>
     <div className="closing-banner"><span>THE OUTCOME</span><h3>{close.closing}</h3></div>
-    <SpeakerNotes notes={close.speakerNotes}/>
+    {/* <SpeakerNotes notes={overview.speakerNotes}/> */}
   </>;
 }
 

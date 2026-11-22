@@ -16,6 +16,7 @@ const stakeholders = {
     { name: 'Industry processes', detail: 'Potential downstream supply, market-process and data inconsistencies.' },
     { name: 'Migration programme', detail: 'Subsequent cohorts, shared mappings and programme dependencies.' },
   ],
+  /*
   speakerNotes: [
     'This cannot be treated as a Commercials issue in isolation.',
     'United Energy needs to own its intended commercial product definitions and approve the correct outcome. The SI needs to investigate the extraction and transformation pipeline. Kraken needs to investigate platform configuration, migration behaviour and any relevant platform issues.',
@@ -24,6 +25,7 @@ const stakeholders = {
     'I would also assess the wider impact, particularly billing, payments, customer service, communications, customer journeys and industry processes.',
     'My role is to bring these parties together, maintain one shared understanding, make dependencies visible and ensure every action has a clear owner.',
     'Shared resolution does not mean ambiguous accountability.'
-  ]
+  ],
+  */
 };
 export default stakeholders;

@@ -14,6 +14,7 @@ const overview = {
     { number: '03', title: 'Mobilise', description: 'Bring United Energy, Kraken and the SI around one recovery plan.' },
   ],
   leadership: 'Take ownership of the response without prematurely assigning blame.',
+  /*
   speakerNotes: [
     'My immediate priority would be to protect customers and establish control of the situation.',
     'I would acknowledge the client’s concerns, particularly around potential billing errors and customer complaints, and take ownership of coordinating the response.',
@@ -21,6 +22,7 @@ const overview = {
     'I would not speculate about the root cause or promise an immediate fix before understanding the exposure.',
     'First, I want to establish exactly which customers are affected, whether further migrations are at risk, and whether any incorrect bills have already been generated.',
     'We need one shared understanding of the situation, clear ownership and an agreed recovery approach.'
-  ]
+  ], 
+  */
 };
 export default overview;

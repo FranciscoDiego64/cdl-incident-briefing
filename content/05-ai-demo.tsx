@@ -10,6 +10,7 @@ const aiDemo = {
   ],
   prompt: 'You are supporting a Client Delivery Lead investigating a product migration issue. Review the following aggregated mismatch patterns. Separate confirmed observations from hypotheses. Identify likely investigation paths, the evidence needed to validate them, and a prioritised set of next actions. Do not infer the correct customer tariff or recommend account changes without approved business mapping.',
   guardrail: 'AI accelerates analysis; deterministic checks and accountable people validate decisions. No customer-level personal data is used in this demonstration.',
+  /*
   speakerNotes: [
     'I would also use AI practically during the investigation, rather than just as a communication tool.',
     'For this case, I would start with a synthetic migration dataset containing expected product assignments, actual migrated product IDs, migration batches and source identifiers.',
@@ -18,6 +19,7 @@ const aiDemo = {
     'I would also use AI to summarise validated findings into incident updates and recovery actions.',
     'AI would not decide which product a customer should receive, approve financial corrections or trigger account changes. Those decisions remain with the accountable business and technical owners.',
     'All sensitive information would remain within approved tools and access controls. The objective is to reduce analysis time and improve decision-making while maintaining human accountability.'
-  ]
+  ],
+  */
 };
 export default aiDemo;

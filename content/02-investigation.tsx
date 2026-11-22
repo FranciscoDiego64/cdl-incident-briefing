@@ -9,6 +9,7 @@ const investigation = {
     { name: 'Migration execution', question: 'Did the payload assign the intended product?', detail: 'Compare payload values with the resulting customer account assignment.' },
   ],
   outputs: ['Confirmed affected population', 'Root cause and contributing factors', 'Correct product mapping', 'Billing exposure assessment', 'Agreed remediation strategy'],
+  /*
   speakerNotes: [
     'The first thing I would do is trace the product assignment end to end.',
     'We know the SI generates the migration payload, containing customer, supply and product information. We also know that Kraken validates payload structure and mandatory fields, but does not automatically validate commercial logic.',
@@ -17,6 +18,7 @@ const investigation = {
     'I would compare expected and actual product assignments, identify patterns across migration batches and establish the precise failure point.',
     'I would distinguish the direct root cause from contributing factors. An incorrect mapping might be the direct cause, while the absence of a commercial validation control allowed it to pass undetected.',
     'The objective is to establish facts, not to find someone to blame.'
-  ]
+  ],
+  */
 };
 export default investigation;
