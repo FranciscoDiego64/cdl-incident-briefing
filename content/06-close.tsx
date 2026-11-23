@@ -10,9 +10,9 @@ const close = {
   communications: [
     { audience: 'Operational teams', method: 'Shared incident channel, action tracker and decision log.' },
     { audience: 'Client stakeholders', method: 'Agreed regular updates on impact, actions, risks and next update.' },
-    { audience: 'Transformation Director', method: 'Concise executive summary and immediate escalation of material changes.' },
+    { audience: 'Transformation Director', method: 'Keep the Transformation Director updated and flag any major changes immediately.' },
   ],
-  closing: 'Fix the issue. Restore confidence. Make the transformation stronger.'
+  closing: "Fix the issue, regain the client's trust and avoid the same problems in future."
 /*
   speakerNotes: [
     'Throughout the incident, I would maintain transparent and consistent communication.',

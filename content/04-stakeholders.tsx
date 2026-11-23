@@ -1,10 +1,10 @@
 const stakeholders = {
   eyebrow: '04 / COLLABORATION',
   title: 'Align people and ownership',
-  lead: 'One incident. Three organisations. Clear accountability.',
+  lead: 'One incident. Three organisations. Transparency.',
   workstreams: [
     { name: 'Commercial correctness', owner: 'United Energy Commercials Domain Owner', partners: 'Kraken Commercials CDL', outcome: 'Approved intended product definitions and correction mapping.' },
-    { name: 'Migration integrity', owner: 'United Energy Migration Lead', partners: 'SI · United Energy Technical Lead · Kraken technical specialists', outcome: 'Source-to-target mapping and migration execution understood and corrected.' },
+    { name: 'Migration integrity', owner: 'United Energy Migration Lead', partners: 'SI · United Energy Technical Lead · Kraken technical specialists', outcome: 'Source-to-target mapping and migration execution understood and fixed.' },
     { name: 'Billing and customer impact', owner: 'United Energy Billing & Payments Domain Owner', partners: 'Kraken Billing CDL · Customer Service · Comms', outcome: 'Billing exposure assessed and customer-facing response coordinated.' },
   ],
   oversight: 'Transformation Director: programme-level oversight, prioritisation and escalation across workstreams.',

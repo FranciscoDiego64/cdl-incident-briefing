@@ -1,7 +1,7 @@
 const aiDemo = {
   eyebrow: '05 / AI-ASSISTED DELIVERY',
   title: 'Accelerate with AI',
-  lead: 'Turn migration data into actionable intelligence.',
+  lead: 'Find patterns in migration data and spot issues faster.',
   steps: [
     { number: '01', title: 'Reconcile', detail: 'Compare expected and actual product assignments using deterministic checks.' },
     { number: '02', title: 'Cluster', detail: 'Use AI to group mismatch patterns and highlight anomalies for investigation.' },
